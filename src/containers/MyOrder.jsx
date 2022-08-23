@@ -10,7 +10,7 @@ const MyOrder = () => {
 				<p className="title">My order</p>
 			</div>
 			<div className="my-order-content">
-				<OrderItem />
+				<OrderItems />
 				<div className="order">
 					<p>
 						<span>Total</span>
