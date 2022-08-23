@@ -5,6 +5,7 @@ import Login from '../containers/Login';
 import RecoveryPassword from '../containers/RecoveryPassword';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
+import OrderItems from '../components/OrderItems';
 import '../styles/global.css';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route exact path="/"  element={<Home/>}/>
           <Route exact path="/Login"  element={<Login/>}/>
           <Route exact path="/recovery-password"  element={<RecoveryPassword/>}/>
+          <Route exact path="/"  element={<OrderItems/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Layout>
