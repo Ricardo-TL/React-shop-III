@@ -4,8 +4,9 @@ import Layout from '../containers/Layout';
 import Login from '../containers/Login';
 import RecoveryPassword from '../containers/RecoveryPassword';
 import Home from '../pages/Home';
-import NotFound from '../pages/NotFound';
 import OrderItems from '../components/OrderItems';
+import ProductItem from '../components/ProductItem';
+import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
 const App = () => {
@@ -16,7 +17,8 @@ const App = () => {
           <Route exact path="/"  element={<Home/>}/>
           <Route exact path="/Login"  element={<Login/>}/>
           <Route exact path="/recovery-password"  element={<RecoveryPassword/>}/>
-          <Route exact path="/"  element={<OrderItems/>}/>
+          <Route exact path="/order-items"  element={<OrderItems/>}/>
+          <Route exact path="/product-items"  element={<ProductItem/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Layout>
