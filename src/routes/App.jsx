@@ -9,6 +9,7 @@ import CreateAccount from '../pages/CreateAccount';
 import Orders from '../pages/Orders';
 import MyAccount from '../pages/MyAccount';
 import Checkout from '../pages/Checkout';
+import SendEmail from '../pages/SendEmail';
 import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
@@ -18,15 +19,14 @@ const App = () => {
       <Layout>
         <Routes>
           <Route exact path="/home"  element={<Home/>}/>
-          <Route exact path="/Login"  element={<Login/>}/>
-          <Route exact path="/recovery-password"  element={<RecoveryPassword/>}/>
-          <Route exact path="/product-info"  element={<ProductInfo/>}/>
-          <Route exact path="/product-info"  element={<ProductInfo/>}/>
+          <Route exact path="/login"  element={<Login/>}/>
+          <Route exact path="/recoverypassword"  element={<RecoveryPassword/>}/>
+          <Route exact path="/sendemail"  element={<SendEmail/>}/>
           <Route exact path="/new-password"  element={<NewPassword/>}/>
-          <Route exact path="/create-account"  element={<CreateAccount/>}/>
-          <Route exact path="/orders"  element={<Orders/>}/>
-          <Route exact path="/my-account"  element={<MyAccount/>}/>
+          <Route exact path="/account"  element={<MyAccount/>}/>
+          <Route exact path="/signup"  element={<CreateAccount/>}/>
           <Route exact path="/checkout"  element={<Checkout/>}/>
+          <Route exact path="/orders"  element={<Orders/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Layout>
