@@ -5,6 +5,7 @@ import Login from '../pages/Login';
 import RecoveryPassword from '../pages/RecoveryPassword';
 import Home from '../pages/Home';
 import NewPassword from '../pages/NewPassword';
+import CreateAccount from '../pages/CreateAccount';
 import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
@@ -18,7 +19,8 @@ const App = () => {
           <Route exact path="/recovery-password"  element={<RecoveryPassword/>}/>
           <Route exact path="/product-info"  element={<ProductInfo/>}/>
           <Route exact path="/product-info"  element={<ProductInfo/>}/>
-          <Route exact path="/pnew-password"  element={<NewPassword/>}/>
+          <Route exact path="/new-password"  element={<NewPassword/>}/>
+          <Route exact path="/create-account"  element={<CreateAccount/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Layout>
