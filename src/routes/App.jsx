@@ -9,6 +9,7 @@ import ProductItem from '../components/ProductItem';
 import Order from '../components/Order';
 import ShoppingCartItem from '../components/ShoppingCartItem';
 import Menu from '../components/Menu';
+import ProductInfo from '../components/ProductInfo';
 import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route exact path="/order"  element={<Order/>}/>
           <Route exact path="/shopping-cart-item"  element={<ShoppingCartItem/>}/>
           <Route exact path="/menu"  element={<Menu/>}/>
+          <Route exact path="/product-info"  element={<ProductInfo/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Layout>
