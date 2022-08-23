@@ -12,10 +12,10 @@ const App = () => {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route exact path="/"  component={Home}/>
-          <Route exact path="/Login"  component={Login}/>
-          <Route exact path="RecoveryPassWord"  component={RecoveryPassword}/>
-          <Route component={NotFound}/>
+          <Route exact path="/"  element={<Home/>}/>
+          <Route exact path="/Login"  element={<Login/>}/>
+          <Route exact path="RecoveryPassWord"  element={<RecoveryPassword/>}/>
+          <Route element={<NotFound/>}/>
         </Routes>
       </Layout>
     </BrowserRouter>
