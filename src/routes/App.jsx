@@ -8,6 +8,7 @@ import OrderItems from '../components/OrderItems';
 import ProductItem from '../components/ProductItem';
 import Order from '../components/Order';
 import ShoppingCartItem from '../components/ShoppingCartItem';
+import Menu from '../components/Menu';
 import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
@@ -23,6 +24,7 @@ const App = () => {
           <Route exact path="/product-items"  element={<ProductItem/>}/>
           <Route exact path="/order"  element={<Order/>}/>
           <Route exact path="/shopping-cart-item"  element={<ShoppingCartItem/>}/>
+          <Route exact path="/menu"  element={<Menu/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Layout>
