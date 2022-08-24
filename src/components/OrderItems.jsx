@@ -1,14 +1,14 @@
 import React from 'react';
-import '../styles/OrderItems.scss'
+import '../styles/OrderItems.scss';
 
 const OrderItems = () => {
   return (
     <div className="order-item">
             <figure>
-              <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike"/>
+              <img src="https://www.pexels.com/es-es/foto/trafico-gente-roto-coche-12128383/" alt="plane"/>
             </figure>
-            <p>Bike</p>
-            <p>50.00</p>
+            <p>plane</p>
+            <p>5000</p>
           </div>
   );
 }
