@@ -5,11 +5,11 @@ import addToCartbutton from '@icons/bt_add_to_cart.svg'
 
 const ProductItem = () => {
   return (<div className="ProductItem">
-              <img src="https://www.pexels.com/es-es/foto/trafico-gente-roto-coche-12128383/" alt="plane" />
+              <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
               <div className="product-info">
                 <div>
                   <p>$120,00</p>
-                  <p>plane</p>
+                  <p>Bike</p>
                 </div>
                 <figure>
                   <img src={addToCartbutton} alt="" />
