@@ -1,14 +1,15 @@
 import React from 'react';
 import '../styles/OrderItems.scss';
 
-const OrderItems = () => {
+const OrderItems = ({product}) => {
   return (
     <div className="order-item">
             <figure>
-              <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike"/>
+              <img src={product.images[0]} alt={product.title}/>
             </figure>
-            <p>Bike</p>
-            <p>50.00</p>
+            <p>{product.title}</p>
+            <p>${product.price}</p>
+            <img src={close} alt="close" />
           </div>
   );
 }
