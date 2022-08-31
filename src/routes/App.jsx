@@ -11,7 +11,7 @@ import MyAccount from '../pages/MyAccount';
 import Checkout from '../pages/Checkout';
 import SendEmail from '../pages/SendEmail';
 import NotFound from '../pages/NotFound';
-import AppContext from '../context/appContex';
+import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
 import '../styles/global.css';
 
