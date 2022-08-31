@@ -11,26 +11,31 @@ import MyAccount from '../pages/MyAccount';
 import Checkout from '../pages/Checkout';
 import SendEmail from '../pages/SendEmail';
 import NotFound from '../pages/NotFound';
+import AppContext from '../context/appContex';
+import useInitialState from '../hooks/useInitialState';
 import '../styles/global.css';
 
 const App = () => {
+  const initialState = useInitialState();
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route exact path="/home"  element={<Home/>}/>
-          <Route exact path="/login"  element={<Login/>}/>
-          <Route exact path="/recoverypassword"  element={<RecoveryPassword/>}/>
-          <Route exact path="/sendemail"  element={<SendEmail/>}/>
-          <Route exact path="/new-password"  element={<NewPassword/>}/>
-          <Route exact path="/account"  element={<MyAccount/>}/>
-          <Route exact path="/signup"  element={<CreateAccount/>}/>
-          <Route exact path="/checkout"  element={<Checkout/>}/>
-          <Route exact path="/orders"  element={<Orders/>}/>
-          <Route path="*" element={<NotFound/>}/>
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <AppContext.Provider value={initialState}>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route exact path="/home"  element={<Home/>}/>
+            <Route exact path="/login"  element={<Login/>}/>
+            <Route exact path="/recoverypassword"  element={<RecoveryPassword/>}/>
+            <Route exact path="/sendemail"  element={<SendEmail/>}/>
+            <Route exact path="/new-password"  element={<NewPassword/>}/>
+            <Route exact path="/account"  element={<MyAccount/>}/>
+            <Route exact path="/signup"  element={<CreateAccount/>}/>
+            <Route exact path="/checkout"  element={<Checkout/>}/>
+            <Route exact path="/orders"  element={<Orders/>}/>
+            <Route path="*" element={<NotFound/>}/>
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </AppContext.Provider>
   );
 }
 
